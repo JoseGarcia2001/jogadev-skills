@@ -1,0 +1,12 @@
+{
+  "name": "jogadev-skills",
+  "owner": { "name": "Jose Garcia" },
+  "description": "Skills personales reutilizables (jogadev). Solo contenido genérico, sin datos sensibles.",
+  "plugins": [
+    {
+      "name": "jogadev",
+      "source": "./plugins/jogadev",
+      "description": "Toolkit personal: skills genéricas y reutilizables, instalables en cualquier equipo."
+    }
+  ]
+}

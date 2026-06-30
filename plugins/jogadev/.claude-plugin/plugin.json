@@ -1,0 +1,8 @@
+{
+  "name": "jogadev",
+  "description": "Toolkit personal de Jose: skills genéricas y reutilizables (sin datos sensibles).",
+  "author": { "name": "Jose Garcia" },
+  "homepage": "https://github.com/JoseGarcia2001/jogadev-skills",
+  "repository": "https://github.com/JoseGarcia2001/jogadev-skills",
+  "license": "MIT"
+}
