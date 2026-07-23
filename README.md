@@ -24,6 +24,7 @@ Plugin **`jogadev`**:
 
 | Skill | Para qué |
 |---|---|
+| `pendientes` | Bolsa única de pendientes personales: captura, lista, filtra y completa tareas en un índice grepable (`~/pendientes/`, datos fuera del repo). |
 | `self-hosting-runbook` | Plantilla para montar/operar servicios self-hosted tras un túnel saliente (sin abrir puertos). |
 
 Las skills son *model-invoked*: Claude las activa solo cuando su `description` calza con la tarea.
