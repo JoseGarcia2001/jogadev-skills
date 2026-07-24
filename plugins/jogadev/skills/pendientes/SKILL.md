@@ -16,12 +16,14 @@ Una sola bolsa para todos los pendientes, de cualquier área o proyecto. Los dat
 
 ```
 - [ ] Título corto #area (YYYY-MM-DD)
-- [ ] Título corto #area (YYYY-MM-DD) → [[YYYY-MM-DD-slug]]
+- [ ] Título corto (para: YYYY-MM-DD) #area (YYYY-MM-DD) → [[YYYY-MM-DD-slug]]
 - [x] Tarea hecha #area (YYYY-MM-DD)
 ```
 
+- **El orden del índice ES la prioridad**: la línea de arriba es lo más importante. Sin campos de prioridad. Las `[x]` van al fondo. Capturas nuevas: append al final de las abiertas, salvo que el usuario indique urgencia.
 - Tags de área en kebab-case, uno o más por tarea. Si el usuario no da área, infiérela de la conversación; en última instancia `#inbox`.
 - Fecha = día de captura, zona horaria del usuario.
+- `(para: YYYY-MM-DD)` = deadline, SOLO cuando existe uno real (sesión, compromiso, entrega). No inventar fechas: un deadline falso se vence en silencio y devalúa los demás.
 - Archivo de cuerpo: `tareas/YYYY-MM-DD-slug.md`. Texto libre, fiel a lo que soltó el usuario (limpiar muletillas, no resumir). Sin frontmatter y sin estado — el estado vive solo en `INDEX.md`.
 
 ## Operaciones
@@ -38,7 +40,9 @@ grep -ril 'palabra' ~/pendientes/tareas/              # buscar en cuerpos
 
 **Detalle** ("dame el detalle de X"): Read del archivo linkeado — solo entonces.
 
-**Completar** ("marca X como hecha"): editar `[ ]` → `[x]` en `INDEX.md`. El archivo de cuerpo se queda como histórico.
+**Completar** ("marca X como hecha"): editar `[ ]` → `[x]` en `INDEX.md` y mover la línea al fondo. El archivo de cuerpo se queda como histórico. Nunca borrar tareas salvo pedido explícito.
+
+**Priorizar / repriorizar** ("repriorícemos", "recap de tareas"): leer el índice completo, proponer un orden con lógica explícita (deadlines primero, prerequisitos antes que dependientes, research al final), dejar que el usuario ajuste, y reordenar las líneas. Al pasar, preguntar por deadlines reales de las tareas que huelan a tenerlos — solo esas.
 
 **Archivar** (solo si el usuario lo pide): mover las líneas `[x]` a `ARCHIVO.md` junto al índice.
 
