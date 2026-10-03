@@ -1,6 +1,6 @@
 ---
 name: pendientes
-description: Bolsa única y local de pendientes personales. Úsala cuando el usuario diga "anota X", "pendiente:", "apunta X", "mis pendientes", "qué tengo pendiente (de un área)", "marca X como hecha" o "/pendientes". Captura tareas de una línea o con cuerpo extenso, lista, filtra por tag y completa — siempre on-demand, nunca por iniciativa propia.
+description: Bolsa única y local de pendientes personales. Úsala cuando el usuario diga "anota X", "pendiente:", "apunta X", "mis pendientes", "qué tengo pendiente (de un área)", "marca X como hecha" o "repriorícemos". Solo on-demand, nunca por iniciativa propia.
 ---
 
 # Pendientes — bolsa única, local y grepable
